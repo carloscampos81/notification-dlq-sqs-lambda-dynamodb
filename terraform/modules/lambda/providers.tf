@@ -15,8 +15,6 @@ data "archive_file" "source" {
   source_dir  = pathexpand("../python-files")
   output_path = pathexpand("../my-lambda-packages/notification_dlq_lambda.zip")
   excludes    = ["__init__.py", "*.pyc"]
-  #source_dir  = "${path.module}/script"
-  #output_path = "${path.module}/lambda_package/notification_dlq_lambda.zip"
 }
 
 resource "aws_s3_object" "file_upload" {
