@@ -1,4 +1,5 @@
-import python.notification_dlq_lambda as notification_dlq_lambda
+from importlib_metadata import files
+import notification_dlq_lambda as notification_dlq_lambda
 
 def handler_test():
 
