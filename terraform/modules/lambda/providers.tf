@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "lambda_trust_policy" {
 # Zip the Lamda function on the fly
 data "archive_file" "source" {
   type        = "zip"
-  source_dir  = pathexpand("../python")
+  source_dir  = pathexpand("../python-files")
   output_path = pathexpand("../my-lambda-packages/notification_dlq_lambda.zip")
   excludes    = ["__init__.py", "*.pyc"]
   #source_dir  = "${path.module}/script"
