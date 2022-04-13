@@ -1,7 +1,0 @@
--i https://pypi.org/simple
-boto3
-requests
-python-dotenv
-pytest
-pytest-env
-moto
