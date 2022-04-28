@@ -21,11 +21,6 @@ variable "bucket_cleanup" {
   description = "Se valor for True, é criado a politica de limpeza para os buckets"
 }
 
-variable "accounts_arn" {
-  type        = string
-  default     = "arn:aws:iam::703760120003:user/terraform-user"
-  description = "Conta de Serviço."
-}
 
 variable "autoscaling_min_read_capacity" {
   type        = number

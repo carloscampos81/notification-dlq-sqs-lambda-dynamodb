@@ -8,11 +8,6 @@ variable "environment" {
   description = "Nome do ambiente da fila SQS."
 }
 
-variable "account_arn" {
-  type        = string
-  description = "ARN da conta que terá acesso à SQS."
-}
-
 variable "visibility_timeout" {
   type        = number
   description = "Timeout de visibilidade padrão da mensagem"

@@ -29,7 +29,7 @@ resource "aws_sqs_queue_policy" "dlq_std_policy" {
         "Sid": "__sender_statement",
         "Effect": "Allow",
         "Principal": {
-          "AWS": var.account_arn
+          "AWS": "*"
         },
         "Action": "SQS:SendMessage",
         "Resource": aws_sqs_queue.dlq_std.arn
@@ -38,7 +38,7 @@ resource "aws_sqs_queue_policy" "dlq_std_policy" {
         "Sid": "__receiver_statement",
         "Effect": "Allow",
         "Principal": {
-          "AWS": var.account_arn
+          "AWS": "*"
         },
         "Action": [
           "SQS:ChangeMessageVisibility",

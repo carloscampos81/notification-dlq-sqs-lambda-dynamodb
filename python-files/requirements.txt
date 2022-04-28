@@ -5,3 +5,4 @@ python-dotenv
 pytest
 pytest-env
 moto
+aws-sam-cli>=1.1.0

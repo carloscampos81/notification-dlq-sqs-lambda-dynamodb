@@ -1,4 +1,4 @@
-resource "aws_appautoscaling_target" "dynamodb_table_read_target" {
+/*resource "aws_appautoscaling_target" "dynamodb_table_read_target" {
     max_capacity       = var.autoscale_max_read_capacity
     min_capacity       = var.autoscale_min_read_capacity
     resource_id        = "table/${aws_dynamodb_table.dynamodb_table.name}"
@@ -42,4 +42,4 @@ resource "aws_appautoscaling_policy" "dynamodb_table_write_policy" {
         }
         target_value = 90
     }
-}
+}*/

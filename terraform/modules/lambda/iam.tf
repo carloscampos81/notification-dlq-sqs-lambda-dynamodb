@@ -1,6 +1,7 @@
 locals {
   function_role_name = "${var.function_name}-${var.environment}"
 }
+
 resource "aws_iam_role" "lambda_function_role" {
   name               = local.function_role_name
   assume_role_policy = "${data.aws_iam_policy_document.lambda_trust_policy.json}"

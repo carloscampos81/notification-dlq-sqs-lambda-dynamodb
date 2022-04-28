@@ -1,4 +1,4 @@
-output "name" {
+/*output "name" {
   description = "Dynamodb Table Name"
   value       = aws_dynamodb_table.dynamodb_table.name
 }
@@ -26,4 +26,4 @@ output "scalable_dimension" {
 output "namespace" {
   description = "Dynamodb Namespace"
   value       = aws_appautoscaling_target.dynamodb_table_read_target.service_namespace
-}
+}*/

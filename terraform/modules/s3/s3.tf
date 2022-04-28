@@ -33,7 +33,7 @@ resource "aws_s3_bucket" "bucket_policy" {
         "Sid": "TesteLambdaDynamoDB",
         "Effect": "Allow",
         "Principal": {
-          "AWS": var.accounts_arn
+          "AWS": "*"
         },
         "Action": [
           "s3:GetObject*",

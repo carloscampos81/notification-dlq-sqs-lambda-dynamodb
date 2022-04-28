@@ -4,7 +4,6 @@ module "s3_dev" {
   name           = var.s3_bucket_names[count.index].name
   bucket_cleanup = var.s3_bucket_names[count.index].bucket_cleanup
   environment    = "dev"
-  accounts_arn   = var.accounts_arn
 }
 
 
@@ -14,7 +13,6 @@ module "sqs_dev" {
   name               = var.sqs_queue_names[count.index].name
   visibility_timeout = 3600
   environment        = "dev"
-  account_arn        = var.accounts_arn
   function_arn       = module.lambda_dev.function_arn
 }
 
